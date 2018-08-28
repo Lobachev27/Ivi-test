@@ -23,13 +23,12 @@
   box-sizing: border-box;
   height: 0;
   width: 0;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
   border-right: 4vw solid white;
   border-top: 4vw solid white;
   border-left: 4vw solid transparent;
   border-bottom: 4vw solid transparent;
-  opacity: 1;
 }
 
 .header__caption {

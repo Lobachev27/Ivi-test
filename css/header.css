@@ -50,11 +50,27 @@
   font-size: 32px;
   font-weight: normal;
   color: white;
+  word-break: break-all;
   flex-wrap: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  padding: 0;
+  padding: 0 22px 0 0;
+}
+
+.caption__text:after {
+  content: "...";
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  margin-left: 50px;
+  opacity: 1;
+}
+
+@media (min-width: 1860px) {
+  .caption__text:after {
+    opacity: 0;
+  }
 }
 
 .header__nav {
